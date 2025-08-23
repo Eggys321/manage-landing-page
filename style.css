@@ -20,6 +20,11 @@ body {
   font-size: 16px;
   min-height: 100vh;
   overflow-x: hidden;
+  background-image: url("assets/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  /* background-position-x: right; */
+  background-position-x: 900px;
+  background-position-y: -150px;
 }
 
 .container {
@@ -38,36 +43,36 @@ nav {
 }
 
 ul {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
-  font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
 }
 
 ul li:hover {
-  color: rgb(171, 170, 170);
-  cursor: pointer;
+    color: rgb(171, 170, 170);
+    cursor: pointer;
 }
 
 #nav-btn button {
-  width: 100%;
-  padding: 15px 20px;
-  border-radius: 50px;
-  background-color: var(--orange-400);
-  border: none;
-  color: var(--gray-50);
-  font-weight: 700;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: var(--orange-400);
+    border: none;
+    color: var(--gray-50);
+    font-weight: 700;
 }
 #nav-btn button:hover {
-  opacity: 50%;
-  cursor: pointer;
+    opacity: 50%;
+    cursor: pointer;
 }
 
 #menu-icon-wrapper {
-  display: none;
+    display: none;
 }
-#brand-logo{
+#brand-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,24 +80,30 @@ ul li:hover {
 }
 
 @media (max-width: 768px) {
+    
+    body {
+      /* background-position-x: right; */
+      background-position-x: 1px;
+      background-position-y: -200px;
+    }
     .container {
         max-width: 1100px;
         padding-left: 18px;
         padding-right: 18px;
     }
-    nav ul{
+    nav ul {
         display: none;
     }
     #menu-icon-wrapper {
-      display: block;
-      width: 11%;
-      /* border: 1px solid red; */
-    }
-    #menu-icon-wrapper img {
-      display: block;
-      width: 100%;
-    }
-    #nav-btn {
-        display: none;
-    }
+        display: block;
+    width: 11%;
+    /* border: 1px solid red; */
+}
+#menu-icon-wrapper img {
+    display: block;
+    width: 100%;
+}
+#nav-btn {
+    display: none;
+}
 }
